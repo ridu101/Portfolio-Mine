@@ -16,101 +16,97 @@
 
 <body>
     <header>
-        <section>
-            <!-- navbar -->
-            <nav class="bg-[#ff8063] py-4 text-white justify-center flex space-x-8 sticky top-0">
-                <a href=""
-                    class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
-                    About
-                    <span
-                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href=""
-                    class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
-                    Work
-                    <span
-                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href=""
-                    class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
-                    Portfolio
-                    <span
-                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href=""
-                    class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
-                    Contact
-                    <span
-                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-            </nav>
-        </section>
+        <nav class="bg-[#ff8063] py-4 text-white justify-center flex space-x-8 sticky top-0 z-50">
+            <a href="" class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
+                About
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="" class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
+                Work
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="" class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
+                Portfolio
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="" class="relative group transform transition duration-300 hover:-translate-y-1 hover:scale-105">
+                Contact
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+        </nav>
 
         <!-- banner section -->
-        <section>
-            <div class="flex w container mx-auto gap-20 mt-10   ">
+        <section class="flex flex-col md:flex-row items-center justify-center mt-10 px-4 md:px-0">
+            <div class="flex flex-col md:flex-row mx-auto gap-10 md:gap-20 w-full md:w-auto">
                 <!-- text div -->
-                <div class="w-1/2 space-y-5">
-                    <h1 class="text-[40px] font-semibold">Hello, I'M <br> <span class="text-[#ff8367]">Ridwan
-                            Ahmed</span></h1>
-                    <p>“I’m a MERN Stack Developer skilled in building scalable <br> web applications using MongoDB,
-                        Express.js, React, and Node.js.”</p>
-                    <button class="btn bg-[white] hover:bg-[#ff8063]">Hire Me</button>
-
+                <div class="w-full md:w-1/2 space-y-5 text-center md:text-left">
+                    <h1 class="text-3xl sm:text-4xl font-semibold">
+                        Hello, I'M <br> <span class="text-[#ff8367]">Ridwan Ahmed</span>
+                    </h1>
+                    <p class="text-sm sm:text-base">
+                        “I’m a MERN Stack Developer skilled in building scalable
+                        web applications using MongoDB, Express.js, React, and Node.js.”
+                    </p>
+                    <button class="btn bg-white hover:bg-[#ff8063] text-black">Hire Me</button>
                 </div>
+
                 <!-- img div -->
-                <div class="w-1/2">
-                    <img class="w-[330px] h-[330px] rounded-full " src="./images/my.jpg" alt="">
+                <div class="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+                    <img class="w-64 h-64 sm:w-80 sm:h-80 md:w-[330px] md:h-[330px] rounded-full object-cover"
+                        src="./images/my.jpg" alt="">
                 </div>
             </div>
         </section>
 
-    </header>
-    <main>
-        <!-- Latest workings -->
-
-        <section class="bg-[#f8f9fc] py-16">
-            <div class="max-w-6xl mx-auto px-6 text-center">
+        <!-- Latest workings section -->
+        <section class="bg-[#f8f9fc] py-16 px-4 sm:px-6 lg:px-0">
+            <div class="max-w-6xl mx-auto text-center">
                 <!-- Section title -->
-                <h2 class="text-3xl font-bold mb-10">
-                    <span class="text-[#ff8063]">LASTET</span> WORKING PROJECT
+                <h2 class="text-2xl sm:text-3xl font-bold mb-10">
+                    <span class="text-[#ff8063]">LATEST</span> WORKING PROJECTS
                 </h2>
 
                 <!-- Cards wrapper -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Card 1 -->
-                    <a href="https://ridu101.github.io/green-earth-practice/" target="_blank"
+                    <a href="https://ridu101.github.io/green-earth-practice/" target="_blank" rel="noopener noreferrer"
                         class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden block">
-                        <img src="./images/green-1.png" alt="Power-x-gym" class="w-full h-52 object-cover">
+                        <img src="./images/green-1.png" alt="Green Earth" class="w-full h-52 object-cover">
                         <div class="p-5 text-left">
-                            <h3 class="text-lg font-bold text-[#1f2937]"> Green Earth Project</h3>
+                            <h3 class="text-lg font-bold text-[#1f2937]">Green Earth Project</h3>
                             <p class="text-sm text-gray-600 mt-2">
-                               “A sustainability-focused web application , and green initiatives to inspire a healthier planet.”
+                                A sustainability-focused web application and green initiatives to inspire a healthier
+                                planet.
                             </p>
                         </div>
                     </a>
 
                     <!-- Card 2 -->
-                    <a href="https://ridu101.github.io/MoneyPayApp/" target="_blank"
+                    <a href="https://ridu101.github.io/MoneyPayApp/" target="_blank" rel="noopener noreferrer"
                         class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden block">
-                        <img src="./images/money.png" alt="Creative Agency" class="w-full h-52 object-cover">
+                        <img src="./images/money.png" alt="MoneyPay" class="w-full h-52 object-cover">
                         <div class="p-5 text-left">
                             <h3 class="text-lg font-bold text-[#1f2937]">MoneyPay</h3>
                             <p class="text-sm text-gray-600 mt-2">
-                                “MoneyPay is a secure and fast mobile financial service app that allows users to send, receive, and manage money digitally. .”
+                                MoneyPay is a secure and fast mobile financial service app for sending, receiving, and
+                                managing money digitally.
                             </p>
                         </div>
                     </a>
 
                     <!-- Card 3 -->
-                    <a href="https://ridu101.github.io/Emergency-Hotline/" target="_blank"
+                    <a href="https://ridu101.github.io/Emergency-Hotline/" target="_blank" rel="noopener noreferrer"
                         class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden block">
-                        <img src="./images/em.png" alt="Hard Rock Music" class="w-full h-52 object-cover">
+                        <img src="./images/em.png" alt="Emergency Hotline" class="w-full h-52 object-cover">
                         <div class="p-5 text-left">
-                            <h3 class="text-lg font-bold text-[#1f2937]">Hard Rock Music</h3>
+                            <h3 class="text-lg font-bold text-[#1f2937]">Emergency-Hotline</h3>
                             <p class="text-sm text-gray-600 mt-2">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Emergency Hotline is a web/mobile application providing quick access to all government
+                                service numbers.
                             </p>
                         </div>
                     </a>
@@ -118,11 +114,10 @@
                 </div>
             </div>
         </section>
-
         </div>
 
-    </main>
-    <footer></footer>
+        </main>
+        <footer></footer>
 
 
 </body>
